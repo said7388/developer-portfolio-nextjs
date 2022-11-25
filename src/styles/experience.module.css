@@ -1,0 +1,166 @@
+.experience {
+  min-height: fit-content;
+}
+
+.experienceBody {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.experienceDescription {
+  width: 100%;
+  flex: 0.65;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.experienceDescription > h1 {
+  font-size: 2.5rem;
+  font-family: var(--primaryFont);
+  margin-bottom: 2rem;
+}
+
+.experienceCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  height: 140px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.expcardImg {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.expcardImg > img {
+  width: 36px;
+  pointer-events: none;
+}
+
+.experienceDetails {
+  margin-left: 0.6rem;
+}
+
+.experienceDetails > h6 {
+  font-family: var(--primaryFont);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.experienceDetails > h4 {
+  font-family: var(--primaryFont);
+  font-size: 1.225rem;
+  font-weight: 600;
+}
+
+.experienceDetails > h5 {
+  font-family: var(--primaryFont);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.experienceImage {
+  box-sizing: border-box;
+  padding: 1rem;
+  flex: 0.35;
+  margin-left: 7%;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+.experienceImage > img {
+  width: 100%;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+  .experienceBody {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .experience {
+    min-height: 100%;
+  }
+  /* .experienceImage {
+    display: none;
+  } */
+  .experienceDescription {
+    flex: 1;
+    margin: auto;
+  }
+  .experienceDescription > h1 {
+    font-size: 3.2rem;
+  }
+  .experienceCard {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .experienceDescription > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+  .experienceDescription {
+    padding: 1rem;
+  }
+  .experienceCard {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    height: 130px;
+  }
+  .expcardImg {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+
+  .expcardImg > img {
+    width: 30px;
+  }
+  .experienceDetails > h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .experienceDetails > h4 {
+    font-size: 1.125rem;
+    line-height: 126%;
+  }
+
+  .experienceDetails > h5 {
+    font-size: 1.05rem;
+    line-height: 126%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experienceDescription > h1 {
+    font-size: 2.5rem;
+  }
+}

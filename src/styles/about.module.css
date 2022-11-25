@@ -1,0 +1,144 @@
+.about {
+  min-height: fit-content;
+  position: relative;
+}
+
+.about .lineStyling {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .lineStyling .styleCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.about .lineStyling .styleLine {
+  width: 95%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.aboutBody {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 8rem;
+  height: fit-content;
+}
+
+.aboutDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 0.5;
+  width: 100%;
+  height: fit-content;
+}
+
+.aboutDescription > h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-family: var(--primaryFont);
+}
+
+.aboutDescription > p {
+  font-size: 1.25rem;
+  color: #e0d9d9;
+  font-family: var(--primaryFont);
+}
+
+.aboutAnimation {
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+  .aboutDescription > h2 {
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+  }
+  .aboutDescription > p {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .lineStyling {
+    top: 20px;
+  }
+
+  .aboutBody {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .aboutDescription {
+    flex: 0.6;
+    box-sizing: border-box;
+    /* padding: 5% 10%; */
+    padding: 20px;
+  }
+
+  .aboutDescription > h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .aboutDescription > p {
+    font-size: 1.1rem;
+  }
+
+  .aboutImg > img {
+    width: 250px;
+    flex: 0.4;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about .lineStyling .styleCircle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .aboutDescription > h2 {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about .lineStyling .styleCircle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .about .lineStyling .styleLine {
+    width: 93%;
+    height: 3px;
+    border-radius: 10px;
+  }
+
+  .aboutDescription > h2 {
+    font-size: 2.5rem;
+  }
+
+  .aboutDescription > p {
+    font-size: 0.95rem;
+  }
+
+  .aboutImg > img {
+    width: 200px;
+  }
+}
