@@ -76,7 +76,7 @@ import wolframalpha from "../assets/svg/skills/wolframalpha.svg";
 import arduino from "../assets/svg/skills/arduino.png";
 import spss from "../assets/svg/skills/spss.png";
 import autocad from "../assets/svg/skills/autocad.png";
-import LabView from "../assets/svg/skills/LV.png";
+import labview from "../assets/svg/skills/LabView.png";
 
 import canva from "../assets/svg/skills/canva.svg";
 
@@ -237,8 +237,8 @@ export const skillsImage = (skill) => {
       return spss;
     case "autocad":
       return autocad;
-    case LabView:
-      return LabView;
+    case "labview":
+      return labview;
     default:
       break;
   }

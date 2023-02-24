@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { About, Blog, Contacts, Education, Experience, Landing, Navbar, Projects, Skills } from '../components'
+import { About, Blog, Contacts, Education, Experience, Landing, Navbar, Projects, Reflection, Skills } from '../components'
 
 function HomePage() {
   return (
@@ -14,7 +14,8 @@ function HomePage() {
       <Skills />
       <Projects />
       <Education />
-      <Blog />
+      <Reflection />
+      {/* <Blog /> */}
       <Contacts />
     </>
   )

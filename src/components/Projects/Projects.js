@@ -37,7 +37,7 @@ function Projects() {
 
                         {projectsData.length > 3 && (
                             <div className={styles.projectsViewAll}>
-                                <Link href="/projects">
+                                <Link href="/project">
                                     <button className="text-[#15202B] bg-[#8B98A5] hover:bg-[#1D9BF0] transition-colors">
                                         View All
                                         <HiArrowRight className="text-[#8B98A5] bg-[#15202B] w-[40px] h-[40px] p-2 text-base rounded-[50%] cursor-pointer transition-colors" />

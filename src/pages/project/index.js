@@ -76,7 +76,7 @@ function ProjectPage() {
                     <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
                 </div>
                 <div className="project-container">
-                    <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
+                    <Grid className="project-grid gap-10" container direction="row" alignItems="center" justifyContent="center">
                         {filteredArticles.map(project => (
                             <SingleProject
                                 theme={theme}
